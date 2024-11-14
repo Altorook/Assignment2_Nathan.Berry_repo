@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         playerZVelocity = Input.GetAxis("Vertical");
         mouseUpRotation += Input.GetAxis("Mouse Y") * _mouseSens;
         mouseRightRotation = Input.GetAxis("Mouse X") * _mouseSens;
-        _cameraTransform.eulerAngles = new Vector3(Mathf.Clamp(-mouseUpRotation, -camVerticalClamp, camVerticalClamp), _playerTransform.rotation.y, _cameraTransform.rotation.z);
+        _cameraTransform.localEulerAngles = new Vector3(Mathf.Clamp(-mouseUpRotation, -camVerticalClamp, camVerticalClamp),0, 0);
     }
     private void FixedUpdate()
     {
