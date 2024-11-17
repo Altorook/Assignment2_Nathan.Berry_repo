@@ -22,6 +22,6 @@ public class HealthManager : MonoBehaviour
 
         playerHealth += healthAmount;
         playerHealth = Mathf.Clamp(playerHealth, 0, maxHealth);
-        Debug.Log("Health Healed " + healthAmount +" - Player Health" + playerHealth);
+        Debug.Log("Health Changed By " + healthAmount +" - Player Health" + playerHealth);
     }
 }

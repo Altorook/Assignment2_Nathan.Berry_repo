@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4175333774369671494}
   - component: {fileID: 8404804757961906296}
   - component: {fileID: 7671085901843787909}
+  - component: {fileID: 7524472427726149558}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Untagged
@@ -2027,5 +2028,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20fda0ae1de582b48b88ca292e3f996d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KillOrder:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7524472427726149558}
+        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
+        m_MethodName: DestroyStupidObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _healAmount: 20
+--- !u!114 &7524472427726149558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299978558818379347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7932f3d0ac90d6e42b8e7f89ac6d9600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

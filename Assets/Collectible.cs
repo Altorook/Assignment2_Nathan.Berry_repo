@@ -1,31 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Collectible : MonoBehaviour
+public class Collectible : MonoBehaviour, ICollected
 {
-    // Start is called before the first frame update
-    void Start()
+    public UnityEvent KillOrder;
+    public void IntOnCollect()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        OnCollect();
+        KillOrder.Invoke();
     }
     public virtual void OnCollect()
     {
         Debug.Log("Base collectible");
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            OnCollect();
-            Destroy(gameObject);
-        }    
     }
 }
 

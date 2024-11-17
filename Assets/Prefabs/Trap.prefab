@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5211128437865104312}
   - component: {fileID: 3060429857554031845}
   - component: {fileID: 3560032564964223160}
+  - component: {fileID: 5381772088473758428}
   m_Layer: 0
   m_Name: Trap
   m_TagString: Untagged
@@ -4486,8 +4487,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41129250debd1b4eab6bad63552ef55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthManager: {fileID: 0}
-  _damageAmount: 0
+  KillOrder:
+    m_PersistentCalls:
+      m_Calls: []
+  _damageAmount: 20
 --- !u!65 &3560032564964223160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4509,3 +4512,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9239445, y: 1.1549112, z: 2.0030627}
   m_Center: {x: 1.3631749, y: 0.5774556, z: -0.20727968}
+--- !u!114 &5381772088473758428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760800331760846732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7932f3d0ac90d6e42b8e7f89ac6d9600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
